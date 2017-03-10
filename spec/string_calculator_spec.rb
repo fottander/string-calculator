@@ -16,4 +16,8 @@ describe StringCalculator do
   it 'returns 1 when receives 1' do
     expect(subject.add('1')).to eq 1
   end
+
+  it 'return 3 when it receives 1 and 2' do
+    expect(subject.add('1,2')).to eq 3
+  end
 end
