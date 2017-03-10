@@ -1,7 +1,9 @@
+require 'pry'
 class StringCalculator
 
   def add(number)
-    number.to_i
+    numbers = number.split(',')
+    numbers[0].to_i + numbers[1].to_i
   end
 
 
